@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Provance: provenance for everything you own</title>
+<meta name="description" content="Scan a room, keep the receipts, check your insurance cover and build an Evidence Pack for any claim. Your household's evidence vault, made in Adelaide.">
+<meta property="og:title" content="Provance: provenance for everything you own">
+<meta property="og:description" content="Scan a room, keep the receipts, check your cover, prove any claim.">
+<meta property="og:url" content="https://provance.online">
+<meta property="og:type" content="website">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header><div class="wrap">
+<a class="brand" href="/"><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect x="3" y="3" width="26" height="26" rx="7" fill="none" stroke="#1F6F54" stroke-width="2.5"/><path d="M11 16.5l3.5 3.5L21.5 12" fill="none" stroke="#1F6F54" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Provance</a>
+<nav aria-label="Main"><a href="#how">How it works</a><a href="#plans">Plans</a><a class="cta" href="#beta">Join the beta</a></nav>
+</div></header>
+
+<main>
+<section class="wrap hero">
+<div>
+<p class="eyebrow">Your household's evidence vault</p>
+<h1>Provenance for everything you own.</h1>
+<p class="lede">Scan a room, keep the receipts, and check what your insurance actually covers. When something breaks, gets stolen or needs a claim, Provance hands you an Evidence Pack that's ready to send.</p>
+<div class="btns"><a class="btn dark" href="#beta">Join the Android beta</a><a class="btn ghost" href="#plans">See plans</a></div>
+<p class="small">Android first, iPhone close behind. Made in Adelaide.</p>
+</div>
+<div class="phone" aria-hidden="true"><div class="shell"><div class="screen">
+<div class="title">Home vault</div><div class="sub">Contents cover: A$60,000</div>
+<div class="rec"><b>Washing machine</b><span>Receipt · warranty to 2029 · serial</span></div>
+<div class="rec"><b>Laptop</b><span>Receipt · 4 photos</span></div>
+<div class="rec warn"><b>Engagement ring</b><span>Over your single-item limit</span></div>
+<div class="rec"><b>Mountain bike</b><span>Serial · photos · police-ready</span></div>
+</div></div></div>
+</section>
+
+<section id="how" class="white"><div class="wrap section">
+<h2>Three steps. No shoebox.</h2>
+<div class="grid3">
+<div><span class="num">01</span><h3>Scan it</h3><p>Walk a room with your camera and Provance lists what it sees. Add receipts, photos and serial numbers as you go.</p></div>
+<div><span class="num">02</span><h3>Check your cover</h3><p>Enter your policy limits and see what's over them before you need to claim. Renewal reminders keep the policy current.</p></div>
+<div><span class="num">03</span><h3>Prove it</h3><p>Warranty, insurance or police report: build an Evidence Pack in seconds, from records your whole household shares.</p></div>
+</div>
+</div></section>
+
+<section id="plans" class="wrap section">
+<h2>Start free. Upgrade when it's worth it.</h2>
+<div class="grid3">
+<div class="plan"><h3>Free</h3><div class="price">A$0</div><p>Up to 10 records, kept on your phone.</p><ul><li>Photos, files and receipts</li><li>Room scanning</li><li>Evidence Packs</li></ul></div>
+<div class="plan"><h3>Premium</h3><div class="price">A$39.99<small> /year</small></div><p>For one person.</p><ul><li>Unlimited records</li><li>Cloud backup and sync</li><li>Assisted item identification</li></ul></div>
+<div class="plan feature"><h3>Household</h3><div class="price">A$49.99<small> /year</small></div><p>Up to six people.</p><ul><li>Everything in Premium</li><li>One shared household vault</li><li>Private records stay private</li></ul></div>
+</div>
+<p class="small" style="margin-top:24px">Prices in AUD, billed yearly through Google Play or the App Store. Cancel any time and keep everything you've saved.</p>
+</section>
+
+<section id="beta" class="beta"><div class="inner">
+<h2>Help us open the doors.</h2>
+<p>Google needs a small group of real testers before Provance can go public on Android. Join the beta, keep the app for two weeks, tell us what breaks. Every tester who stays the full two weeks gets their first year of Household free.</p>
+<form id="beta-form" novalidate>
+<label class="vh" for="email">Your Google account email</label>
+<input id="email" name="email" type="email" required autocomplete="email" placeholder="Your Google account email (the one on your Android phone)">
+<button class="btn" type="submit">Become a tester</button>
+<p id="msg" role="status" aria-live="polite"></p>
+</form>
+<p class="small">We'll only use your email to invite you to the beta. You'll need an Android phone.</p>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+<span>© 2026 Provance · Adelaide, South Australia</span>
+<nav aria-label="Footer"><a href="/privacy">Privacy</a><a href="mailto:support@provance.online">Support</a><a href="https://www.instagram.com/provanceapp/">Instagram</a><a href="https://www.facebook.com/profile.php?id=61596382783455">Facebook</a></nav>
+</div></footer>
+
+<script>
+(function(){
+  var URL='https://ldkhjralfbwsrjgfhbnr.supabase.co/rest/v1/beta_signups';
+  var KEY='sb_publishable_C-yK1ChCBLIzHpQ_1tIQFg_rD1X6llE';
+  var form=document.getElementById('beta-form'),input=document.getElementById('email'),msg=document.getElementById('msg'),btn=form.querySelector('button');
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var email=input.value.trim();
+    if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)){msg.textContent='That email doesn’t look right. Try again?';input.focus();return;}
+    btn.disabled=true;msg.textContent='Signing you up…';
+    fetch(URL,{method:'POST',headers:{'apikey':KEY,'Content-Type':'application/json','Prefer':'return=minimal'},body:JSON.stringify({email:email,platform:'android'})})
+      .then(function(r){
+        if(r.ok||r.status===409){form.reset();msg.textContent='You’re on the list. Watch your inbox for the invite from Google Play.';}
+        else{msg.textContent='Something went wrong. Email support@provance.online and we’ll add you.';}
+      })
+      .catch(function(){msg.textContent='No connection. Check your internet and try again.';})
+      .finally(function(){btn.disabled=false;});
+  });
+})();
+</script>
+</body>
+</html>

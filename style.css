@@ -1,0 +1,53 @@
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;color:#13201C;background:#F4F5F2;-webkit-font-smoothing:antialiased}
+a{color:#1F6F54}a:hover{color:#164F3C}
+h1,h2,h3,.brand,.num,.price{font-family:"Space Grotesk",Inter,sans-serif}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+header .wrap{display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;padding-top:24px;padding-bottom:24px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:22px;letter-spacing:-.01em;text-decoration:none;color:#13201C}
+nav{display:flex;flex-wrap:wrap;gap:24px;font-size:15px;font-weight:500}
+nav a{text-decoration:none;color:#13201C}nav a.cta{color:#1F6F54}
+.hero{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:56px;align-items:center;padding-top:56px;padding-bottom:96px}
+.eyebrow{margin:0;font-size:14px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#1F6F54}
+h1{margin:16px 0 24px;font-weight:700;font-size:clamp(2.6rem,5vw,4.4rem);line-height:1.02;letter-spacing:-.03em}
+.lede{margin:0;font-size:19px;line-height:1.55;color:#3A4743;max-width:34rem}
+.btns{display:flex;flex-wrap:wrap;gap:12px;padding:32px 0 16px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 26px;border-radius:12px;font-weight:600;font-size:16px;text-decoration:none;border:1.5px solid #13201C;cursor:pointer;font-family:inherit}
+.btn.dark{background:#13201C;color:#F4F5F2}.btn.dark:hover{background:#24342F;color:#fff}
+.btn.ghost{background:transparent;color:#13201C}.btn.ghost:hover{background:#E6EBE8}
+.small{margin:0;font-size:14px;color:#55615D}
+.phone{display:flex;justify-content:center}
+.phone .shell{width:300px;height:600px;border-radius:44px;background:#13201C;padding:14px}
+.phone .screen{height:100%;border-radius:32px;background:#fff;padding:28px 20px;display:flex;flex-direction:column;gap:12px}
+.phone .title{font-family:"Space Grotesk",sans-serif;font-weight:700;font-size:22px}
+.phone .sub{font-size:13px;color:#55615D;margin-bottom:6px}
+.rec{border-radius:14px;background:#EEF3EF;padding:14px;display:flex;flex-direction:column;gap:4px}
+.rec b{font-size:15px}.rec span{font-size:13px;color:#3A4743}
+.rec.warn{background:#FBEFD9}.rec.warn span{color:#6B4A12}
+section.white{background:#fff}
+.section{padding-top:96px;padding-bottom:96px}
+h2{margin:0 0 40px;font-size:clamp(2rem,3.5vw,2.8rem);letter-spacing:-.02em;line-height:1.1}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:32px}
+.num{font-weight:700;font-size:40px;color:#1F6F54}
+h3{margin:12px 0 8px;font-size:20px}
+.grid3 p{margin:0;font-size:16px;line-height:1.55;color:#3A4743}
+.plan{border-radius:20px;background:#fff;border:1px solid #D5DBD7;padding:32px;display:flex;flex-direction:column;gap:10px}
+.plan.feature{background:#13201C;color:#F4F5F2;border-color:#13201C}
+.plan h3{margin:0}.price{font-size:40px;font-weight:700}.price small{font-size:18px;font-weight:500;color:#55615D}
+.plan.feature .price small{color:#C9D3CE}.plan p{margin:0;font-size:16px;line-height:1.55;color:#3A4743}.plan.feature p{color:#DDE5E1}
+.plan ul{margin:8px 0 0;padding-left:20px;line-height:1.7;font-size:15px}
+.beta{background:#1F6F54;color:#fff}
+.beta .inner{max-width:760px;margin:0 auto;padding:96px 24px}
+.beta h2{margin-bottom:20px}.beta p{font-size:18px;line-height:1.55;color:#E3EFE9;margin:0 0 28px}
+form{display:flex;flex-wrap:wrap;gap:12px}
+label.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+input[type=email]{flex:1 1 280px;min-height:52px;border-radius:12px;border:0;padding:0 18px;font-size:16px;font-family:inherit}
+.beta .btn{background:#fff;color:#13201C;border-color:#fff}.beta .btn:hover{background:#E3EFE9}
+#msg{flex-basis:100%;margin:4px 0 0;font-size:15px;color:#fff;min-height:1.4em}
+.beta .small{color:#CFE3DA;margin-top:16px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:24px;justify-content:space-between;padding-top:40px;padding-bottom:40px;font-size:14px;color:#55615D}
+footer nav{gap:24px;font-size:14px}
+.doc{max-width:720px;padding-top:24px;padding-bottom:96px}
+.doc h1{font-size:clamp(2.2rem,4vw,3rem)}.doc h2{font-size:22px;margin:40px 0 8px}.doc p{font-size:17px;line-height:1.65;color:#2B3633;margin:0 0 12px}
+:focus-visible{outline:3px solid #1F6F54;outline-offset:3px}

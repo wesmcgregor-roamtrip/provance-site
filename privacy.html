@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privacy · Provance</title>
+<meta name="description" content="How Provance handles your records, your account and your data.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header><div class="wrap">
+<a class="brand" href="/"><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect x="3" y="3" width="26" height="26" rx="7" fill="none" stroke="#1F6F54" stroke-width="2.5"/><path d="M11 16.5l3.5 3.5L21.5 12" fill="none" stroke="#1F6F54" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Provance</a>
+<nav aria-label="Main"><a href="/#how">How it works</a><a href="/#plans">Plans</a><a class="cta" href="/#beta">Join the beta</a></nav>
+</div></header>
+<main class="wrap doc">
+<h1>Privacy</h1>
+<p>Last updated 18 November 2026. This is how the Provance app and this website actually handle your information, written plainly.</p>
+
+<h2>On your device, by default</h2>
+<p>Provance works with no account at all. Your records, photos and Evidence Packs are stored only on your phone. Nothing is sent anywhere unless you sign in and set up cloud sync.</p>
+
+<h2>If you use Provance Cloud</h2>
+<p>Creating an account lets your household back up and share records. Once your household has an active cloud plan, your records, photos and Evidence Packs are stored in Supabase, the database service Provance runs on, so they can sync between your devices and be seen by your household members, except any record you mark private, which stays yours alone. Your display name is shown to your household; your email address never is.</p>
+
+<h2>Signing in and account emails</h2>
+<p>Your email address is used only to sign you in and to send account emails, such as confirming your address and resetting your password. Those emails are sent through Resend, an email delivery service. It is never used for marketing and never shown to other people.</p>
+
+<h2>Paying for a plan</h2>
+<p>Premium and Household are bought through Google Play or the App Store, which handle your payment details; Provance never sees them. RevenueCat, a subscription service, tells Provance which plan your account has, using an anonymous app account ID linked to your Provance sign-in.</p>
+
+<h2>Room scan</h2>
+<p>Room scan identifies items from a video walkthrough. Most of that identification happens on your device. If a cloud comparison is turned on, a cropped photo of one item is sent to Google's Gemini API to help name it: only the photo you have explicitly approved sending, never a whole frame or video, and never used to identify people. That comparison is used to check and improve recognition accuracy, not for advertising or any other purpose.</p>
+
+<h2>The beta sign-up on this website</h2>
+<p>If you join the Android beta, we store the email you give us so we can add it to the Google Play test and contact you about the beta. It isn't used for anything else, and we delete it on request.</p>
+
+<h2>What we don't do</h2>
+<p>No ads, no ad tracking, and no analytics services collecting how you use the app or this website. We don't sell or share your records with anyone outside the household you choose to share them with.</p>
+
+<h2>Questions and deletion</h2>
+<p>For anything about your data, including deleting your account or exporting what's stored about you, email <a href="mailto:support@provance.online">support@provance.online</a>.</p>
+</main>
+<footer><div class="wrap">
+<span>© 2026 Provance · Adelaide, South Australia</span>
+<nav aria-label="Footer"><a href="/">Home</a><a href="mailto:support@provance.online">Support</a></nav>
+</div></footer>
+</body>
+</html>
